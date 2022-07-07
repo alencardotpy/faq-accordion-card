@@ -1,0 +1,58 @@
+
+.accordition{
+    width:410px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    BORDER:1px solid gray;
+    border-radius:20px;
+    padding:20px;
+    color:black;
+}
+
+
+.accordition-container{
+    width:100%;
+}
+
+
+.accordition-container__checkbox {
+    display: none;
+    transition: ease-in .1s;
+}
+
+.accordition-container__label {
+    display: block;    
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+    transition: ease-in .5s;
+}
+
+.accordition-container__label--hover:hover {
+    background: white;
+}
+.accordition-container__container {
+    background: #E2E5F6;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+    
+}
+
+.accordition-container__checkbox + 
+.accordition-container__label + 
+.accordition-container__container {
+    display: none;
+    transition: ease-out 5s;
+}
+
+.accordition-container__checkbox--checked:checked + 
+.accordition-container__label + 
+.accordition-container__container {
+    display: block;
+    transition: ease-in 5s;
+}
