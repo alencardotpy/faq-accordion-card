@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="accordition">
+      <h1 class="accordition-title">FAQ</h1>
+      <div class="accordition-container">
+        <input
+          class="accordition-container__checkbox accordition-container__checkbox--checked"
+          type="checkbox"
+          id="title1"
+        />
+        <label
+          class="accordition-container__label accordition-container__label--hover"
+          for="title1"
+          >How many team members can I invite?</label
+        >
+        <div class="accordition-container__container">
+          <p class="accordition-container__text">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </div>
+      </div>
+      <div class="accordition-container">
+        <input
+          class="accordition-container__checkbox accordition-container__checkbox--checked"
+          type="checkbox"
+          id="title2"
+        />
+        <label
+          class="accordition-container__label accordition-container__label--hover"
+          for="title2"
+          >What is the maximum file upload size?</label
+        >
+        <div class="accordition-container__container">
+          <p class="accordition-container__text">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </div>
+      </div>
+      <div class="accordition-container">
+        <input
+          class="accordition-container__checkbox accordition-container__checkbox--checked"
+          type="checkbox"
+          id="title3"
+        />
+        <label
+          class="accordition-container__label accordition-container__label--hover"
+          for="title3"
+          >How do I reset my password?1</label
+        >
+        <div class="accordition-container__container">
+          <p class="accordition-container__text">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+      </div>
+      <div class="accordition-container">
+        <input
+          class="accordition-container__checkbox accordition-container__checkbox--checked"
+          type="checkbox"
+          id="title4"
+        />
+        <label
+          class="accordition-container__label accordition-container__label--hover"
+          for="title4"
+          >Can I cancel my subscription?</label
+        >
+        <div class="accordition-container__container">
+          <p class="accordition-container__text">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </div>
+      </div>
+      <div class="accordition-container">
+        <input
+          class="accordition-container__checkbox accordition-container__checkbox--checked"
+          type="checkbox"
+          id="title5"
+        />
+        <label
+          class="accordition-container__label accordition-container__label--hover"
+          for="title5"
+          >Do you provide additional support?</label
+        >
+        <div class="accordition-container__container">
+          <p class="accordition-container__text">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/alencardotpy">alencarDotPy</a>.
+      </div>
+    </main>
+  </body>
+</html>
