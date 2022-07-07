@@ -12,7 +12,12 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | FAQ Accordion Card</title>
     <style>
       .attribution {
@@ -25,6 +30,28 @@
     </style>
   </head>
   <body>
+    <header class="header">
+      <img
+        class="accordition__image-bg accordition__image-bg--mobile"
+        src="./images/bg-pattern-mobile.svg"
+        alt=""
+      />
+      <img
+        class="accordition__image accordition__image--mobile"
+        src="./images/illustration-woman-online-mobile.svg"
+        alt=""
+      />
+      <img
+        class="accordition__image-bg accordition__image-bg--desktop"
+        src="./images/bg-pattern-desktop.svg"
+        alt=""
+      />
+      <img
+        class="accordition__image accordition__image--desktop"
+        src="./images/illustration-woman-online-desktop.svg"
+        alt=""
+      />
+    </header>
     <main class="accordition">
       <h1 class="accordition-title">FAQ</h1>
       <div class="accordition-container">
@@ -32,12 +59,16 @@
           class="accordition-container__checkbox accordition-container__checkbox--checked"
           type="checkbox"
           id="title1"
+          name="checkbox_list"
         />
+
         <label
           class="accordition-container__label accordition-container__label--hover"
           for="title1"
-          >How many team members can I invite?</label
-        >
+          >How many team members can I invite?<span
+            class="accordition-container_image"
+          ></span
+        ></label>
         <div class="accordition-container__container">
           <p class="accordition-container__text">
             You can invite up to 2 additional users on the Free plan. There is
@@ -45,17 +76,21 @@
           </p>
         </div>
       </div>
+      <span class="accordition__divider"></span>
       <div class="accordition-container">
         <input
           class="accordition-container__checkbox accordition-container__checkbox--checked"
           type="checkbox"
           id="title2"
+          name="checkbox_list"
         />
         <label
           class="accordition-container__label accordition-container__label--hover"
           for="title2"
-          >What is the maximum file upload size?</label
-        >
+          >What is the maximum file upload size?<span
+            class="accordition-container_image"
+          ></span
+        ></label>
         <div class="accordition-container__container">
           <p class="accordition-container__text">
             No more than 2GB. All files in your account must fit your allotted
@@ -63,17 +98,21 @@
           </p>
         </div>
       </div>
+      <span class="accordition__divider"></span>
       <div class="accordition-container">
         <input
           class="accordition-container__checkbox accordition-container__checkbox--checked"
           type="checkbox"
           id="title3"
+          name="checkbox_list"
         />
         <label
           class="accordition-container__label accordition-container__label--hover"
           for="title3"
-          >How do I reset my password?1</label
-        >
+          >How do I reset my password?<span
+            class="accordition-container_image"
+          ></span
+        ></label>
         <div class="accordition-container__container">
           <p class="accordition-container__text">
             Click “Forgot password” from the login page or “Change password”
@@ -81,17 +120,21 @@
           </p>
         </div>
       </div>
+      <span class="accordition__divider"></span>
       <div class="accordition-container">
         <input
           class="accordition-container__checkbox accordition-container__checkbox--checked"
           type="checkbox"
           id="title4"
+          name="checkbox_list"
         />
         <label
           class="accordition-container__label accordition-container__label--hover"
           for="title4"
-          >Can I cancel my subscription?</label
-        >
+          >Can I cancel my subscription?<span
+            class="accordition-container_image"
+          ></span
+        ></label>
         <div class="accordition-container__container">
           <p class="accordition-container__text">
             Yes! Send us a message and we’ll process your request no questions
@@ -99,17 +142,22 @@
           </p>
         </div>
       </div>
+      <span class="accordition__divider"></span>
       <div class="accordition-container">
         <input
           class="accordition-container__checkbox accordition-container__checkbox--checked"
           type="checkbox"
           id="title5"
+          name="checkbox_list"
         />
+
         <label
           class="accordition-container__label accordition-container__label--hover"
           for="title5"
-          >Do you provide additional support?</label
-        >
+          >Do you provide additional support?
+          <span class="accordition-container_image"></span>
+        </label>
+
         <div class="accordition-container__container">
           <p class="accordition-container__text">
             Chat and email support is available 24/7. Phone lines are open
@@ -117,13 +165,13 @@
           </p>
         </div>
       </div>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/alencardotpy">alencarDotPy</a>.
-      </div>
+      <span class="accordition__divider"></span>
     </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/alencardotpy">alencarDotPy</a>.
+    </footer>
   </body>
 </html>
