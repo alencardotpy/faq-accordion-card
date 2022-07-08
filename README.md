@@ -6,7 +6,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -25,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GIthub Repo](https://github.com/alencardotpy/faq-accordion-card)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://alencardotpy.github.io/faq-accordion-card)
 
 ## My process
 
