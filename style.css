@@ -68,7 +68,7 @@ body{
     
     width:320px;
     height:auto;
-    min-height: 510px;
+    min-height: 490px;
     margin:0 auto;
     display:flex;
     align-self: center;
@@ -134,15 +134,16 @@ body{
 
 .accordition-container__label {
     width:290px;
-    display: flex;    
+    display: flex; 
+    height:40px;   
     padding: 0 ;
     cursor: pointer;
     background: white;
     transition: ease-in 390ms;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
     font-size: 14px;
-    margin:10px auto;
+    margin:5px auto;
     color: var(--VeryDarkDesaturatedBlue);
     font-weight: 500;
 
@@ -233,6 +234,7 @@ body{
     align-self: flex-end;
     width:13px;
     height:13px;
+    top:-10px;
     position: relative;
     animation: outing ease-out 390ms;
     animation-fill-mode: forwards;
@@ -248,7 +250,7 @@ body{
     100%{
         opacity: 1;
         position: relative;
-        top:-5px;
+        top:-15px;
         transform: rotatex(180deg);
     }
     
