@@ -153,9 +153,9 @@ body{
     height:auto;
     display:flex;
     position: relative;
-    margin:0;
+    margin:5px 0;
     left:15px;
-    bottom:20px;
+    top:-10px;
     font-size: 12px;
     color:var(--DarkGrayishBlue);
 
@@ -171,12 +171,6 @@ body{
         height:0;
         opacity: 0;
         border:none;
-        height:10px;
-    }
-    50%{
-        opacity: 0.5;
-        height: auto;
-
     }
     100%{
         height:auto;
@@ -192,10 +186,6 @@ body{
         height:auto;
         opacity: 1;
         border:none;
-    }
-    50%{
-        opacity: 0.5;
-        height: auto; 
     }
 
     100%{
@@ -229,7 +219,6 @@ body{
 .accordition-container__label + 
 .accordition-container__container {
     display: block;
-
     animation: displaying ease-in 390ms;
     animation-fill-mode: forwards;
     animation-timing-function: 390ms;
@@ -237,16 +226,14 @@ body{
 }
 
 .accordition-container_image{
-    
     background-image: url("./images/icon-arrow-down.svg");
     background-size: 13px;
     background-repeat: no-repeat;
     display:flex;
     align-self: flex-end;
-    width:30px;
-    height:30px;
+    width:13px;
+    height:13px;
     position: relative;
-    left:20px;
     animation: outing ease-out 390ms;
     animation-fill-mode: forwards;
 
@@ -257,13 +244,11 @@ body{
     0%{
         opacity: 1;
     }
-    30%{
-        opacity: 0.5;
-    }
+
     100%{
         opacity: 1;
         position: relative;
-        bottom: 20px;
+        top:-5px;
         transform: rotatex(180deg);
     }
     
@@ -271,14 +256,10 @@ body{
 
 @keyframes outing {
     0%{
-        bottom: 10px;
+
         opacity: 0;
         transform: rotatex(180deg);
         
-    }
-    30%{
-        opacity: 0.5;
-
     }
     100%{
         opacity: 1;
@@ -290,11 +271,8 @@ body{
 
 .accordition-container__checkbox:checked + .accordition-container__label>.accordition-container_image{
     position: relative;
-    left:20px;
     animation: easing ease-in 390ms;
     animation-fill-mode: forwards;
-
-   
 
 }
 
@@ -303,9 +281,6 @@ body{
     font-weight: var(--FontWeightLarge);
     animation: ease-in 2s;
     transition: ease-in 5s;
-
-
-   
 
 }
 
